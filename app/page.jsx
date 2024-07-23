@@ -9,20 +9,23 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span>Software Developer</span>
+            <span>Software Engineer</span>
             <h1 className="h1">
               Hello I'm <br /> <span className="text-accent">Ankit Kumar</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies
+              I excel at delivering high-quality software solutions and am
+              proficient in both frontend and backend technologies. With a keen
+              eye for detail and a strong focus on user experience, I
+              effectively tackle complex engineering challenges to drive
+              innovative and successful projects.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href="/assets/resume/Ankit_Kumar.pdf" download>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="uppercase flex items-center gap-2"
+                  className="border border-accent uppercase flex items-center gap-2"
                 >
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />

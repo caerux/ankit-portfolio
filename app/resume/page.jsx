@@ -25,7 +25,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam animi earum, possimus consequuntur omnis aperiam voluptates, fuga non quos quaerat nemo.",
+    "I am Ankit Kumar, a dedicated and skilled Software Engineer with a Bachelor's degree in Computer Science from NIT Bhopal. I have 2+ years of professional experience in developing scalable and user-friendly web applications.",
   info: [
     {
       fieldName: "Name",
@@ -58,7 +58,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam animi earum, possimus consequuntur omnis aperiam voluptates, fuga non quos quaerat nemo.",
+    "As a Software Engineer at Avalara, I was responsible for developing and maintaining internal platforms utilizing JavaScript frameworks such as React.js, Next.js, and Node.js. I streamlined developer efficiency and project visibility by integrating services like Kafka and GraphQL, resulting in a significant reduction in ticket creation time and improved access to information. I successfully implemented various features, including interactive blog sections, while addressing numerous bugs and resolving security vulnerabilities, which contributed to increased website traffic and a safer user experience. Furthermore, I designed and developed a comprehensive dashboard for visualizing key metrics, and ensured high code quality and project maintainability through extensive testing with Jest and Cypress.",
   items: [
     {
       company: "Avalara",
@@ -96,7 +96,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam animi earum, possimus consequuntur omnis aperiam voluptates, fuga non quos quaerat nemo.",
+    "My technical expertise includes proficiency in programming languages such as JavaScript and C++. I have strong skills in frontend technologies, including HTML, CSS, React.js, and Next.js, and I’m experienced with backend frameworks like Node.js and Express.js. I also have knowledge of databases such as MongoDB and PostgreSQL. Additionally, I am familiar with version control systems like Git and GitLab.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -225,6 +225,7 @@ const resume = () => {
                   </ScrollArea>
                 </div>
               </TabsContent>
+              {/* skills */}
               <TabsContent value="skills" className="w-full h-full">
                 <div className="flex flex-col gap-[30px]">
                   <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -233,7 +234,7 @@ const resume = () => {
                       {skills.description}
                     </p>
                   </div>
-                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-5 xl:gap-2 gap-4 ">
                     {skills.skillList.map((skill, index) => {
                       return (
                         <li key={index}>
