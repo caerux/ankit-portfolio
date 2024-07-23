@@ -14,7 +14,7 @@ const stairAnimation = {
 
 //calculate the reverse index for staggred delay
 const reverseIndex = (index) => {
-  const totalSteps = 500; //number of steps
+  const totalSteps = 6; //number of steps
   return totalSteps - index - 1;
 };
 
@@ -23,7 +23,7 @@ const Stairs = () => {
     <>
       {/* render 6 motion divs, each representing a step of the stairs.
   Each div wll have the same animation defined by the stairsAnimation object. */}
-      {[...Array(500)].map((_, index) => {
+      {[...Array(6)].map((_, index) => {
         return (
           <motion.div
             key={index}
@@ -34,7 +34,7 @@ const Stairs = () => {
             transition={{
               duration: 0.2,
               ease: easeOut,
-              delay: reverseIndex(index) * 0.0003,
+              delay: reverseIndex(index) * 0.05,
             }}
             className="h-full w-full bg-white relative"
           />
