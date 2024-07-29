@@ -21,7 +21,7 @@ const Home = () => {
               innovative and successful projects.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/resume/Ankit_Kumar.pdf" download>
+              <a href="/assets/resume/Ankit_Kumar" download>
                 <Button
                   variant="outline"
                   size="lg"
